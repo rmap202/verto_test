@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@*Navbar*@
+<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    <div class="title-bar-title">Menu</div>
+</div>
+<div class="top-bar" style="display: inherit" id="responsive-menu">
+    <div class="grid-x">
+        <div class="upper-section cell">
+            <a><img id="logo-img" width="250" src="~/Images/logo.png" /></a>
+        </div>
+        <div class="lower-section cell">
+            <div class="grid-x">
+                <div class="top-bar-left cell-8">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li><a>Our Products</a></li>
+                        <li><a>Where to Buy</a></li>
+                        <li><a>News & Reviews</a></li>
+                        <li><a>Help & Support</a></li>
+                        <li><a>My Opticron</a></li>
+                    </ul>
+                </div>
+
+                <div class="top-bar-right cell-4">
+                    <ul class="menu">
+                        <li><input type="search" placeholder="Search"></li>
+                        <li><button type="button" class="button">Search</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Slideshow*@
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false">
+    <div class="orbit-wrapper">
+        <ul class="orbit-container">
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                    <img id="logo-img" src="~/Images/slide01.png" />
+                </figure>
+            </li>
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                    <img id="logo-img" src="~/Images/slide01.png" />
+                </figure>
+            </li>
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                    <img id="logo-img" src="~/Images/slide01.png" />
+                </figure>
+            </li>
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                    <img id="logo-img" src="~/Images/slide01.png" />
+                </figure>
+            </li>
+            <li>
+                <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0">
+                        <span class="show-for-sr">First slide details.</span>
+                        <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+                    </button>
+                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                </nav>
+            </li>
+
+        </ul>
+    </div>
+    
+</div>
+@*Thumbnail Links*@
+
+@*Special Offers*@
+
+@*Product Categories*@
+
+@*Footer*@
+
+<div class="footer">
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Opticron</p>
+    </footer>
+</div>
